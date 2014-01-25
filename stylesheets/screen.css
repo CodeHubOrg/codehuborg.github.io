@@ -1,0 +1,493 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Nova Square';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nova Square"), local("NovaSquare"), url(http://themes.googleusercontent.com/static/fonts/novasquare/v5/YsNHj2Yx5KzHzIjNe-czdIbN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+
+/* @group general */
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: "Trebuchet MS", Helvetica Neue, Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+
+a:link,
+a:visited {
+  color: #665956;
+}
+
+.inner {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.margins-vert {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.inline-list li {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.inline-list.skills li {
+  background: #cce2ee;
+  padding: 0.125em 5px;
+  margin: 0.125em 0 0.125em 0.125em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+/* @end general */
+/* @group layout */
+.inner.heading {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+#footer {
+  background: #3d454b;
+}
+
+/* @end layout */
+/* @group topography */
+h1 {
+  background: #3d454b url(../img/codehub_inv.svg) right top no-repeat;
+  background-size: 60px;
+  color: #ecebe3;
+  height: 1.75em;
+  padding: 0 0.6em;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  font-family: 'Nova Square', Arial, sans-serif;
+}
+h1 a:link, h1 a:visited {
+  text-decoration: none;
+  color: #ecebe3;
+}
+
+h2 {
+  color: #ecebe3;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-left: 0.75em;
+}
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 1em;
+  color: #ecebe3;
+}
+
+#header h2 {
+  background: #3d454b;
+}
+
+.about h2 {
+  background: #5c5a57;
+}
+
+.organisers h2 {
+  background: #648494;
+}
+
+.organisers strong {
+  font-weight: bold;
+  background: #acc2be;
+  color: #555;
+}
+.organisers strong a {
+  color: #5c5a57;
+}
+
+.profile h3 {
+  background: #648494;
+  color: fontColor;
+}
+
+.profile .main-data h3 {
+  background: none;
+  padding-left: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* @end typograpy */
+/* @group navigation */
+.nav {
+  background: #3d454b;
+  overflow: auto;
+  padding-bottom: 0.25em;
+}
+.nav li {
+  width: 48.78049%;
+  float: left;
+  margin-right: 2.43902%;
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+  background: #acc2be;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding: 0.25em 0;
+}
+.nav li:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+.nav li a {
+  text-decoration: none;
+  color: #444;
+}
+@media (min-width: 30em) {
+  .nav li {
+    width: 24.09639%;
+    float: left;
+    margin-right: 1.20482%;
+  }
+  .nav li:nth-child(2n) {
+    float: left;
+    margin-right: 1.20482%;
+  }
+  .nav li:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+.nav li.current, .nav li.section-active {
+  background: #ecebe3;
+}
+
+/* @end group */
+/* @group elements-media */
+.media, .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+.media .img {
+  float: left;
+  margin-right: 1em;
+}
+
+.media .img img {
+  display: block;
+}
+
+.media .imgExt {
+  float: right;
+}
+
+.media .imgExt.left {
+  float: left;
+}
+
+/* @end elements-media */
+/* @group elements-profile-main-data */
+/* @end elements-profile-main-data */
+/* @group elements-social */
+#social-networking li, #social-networking a {
+  width: 48px;
+  height: 48px;
+  display: block;
+  float: left;
+}
+#social-networking .twitter {
+  background-position: -71px -14px;
+}
+#social-networking .google-plus {
+  background-position: -198px -12px;
+}
+#social-networking .linkedin {
+  background-position: -390px -12px;
+}
+#social-networking .facebook {
+  background-position: -3px -14px;
+}
+#social-networking .github {
+  background-position: -12px -142px;
+}
+
+#social-networking li {
+  list-style: none;
+  background: url(../img/social-icons.jpg) no-repeat;
+}
+#social-networking li:hover {
+  opacity: 0.6;
+}
+
+/* @end elements-social */
+@media (min-width: 39em) {
+  /* @group general */
+  body {
+    background: #acc2be;
+    color: #ecebe3;
+  }
+
+  a:link,
+  a:visited {
+    color: #d6c9c6;
+  }
+
+  .inner {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .margins-vert {
+    margin-bottom: 1.5em;
+  }
+
+  /* @end general */
+  /* @group layout */
+  .container {
+    background: #648494;
+  }
+
+  #header {
+    background: #3d454b;
+    overflow: auto;
+  }
+
+  #footer {
+    padding-left: 0;
+  }
+
+  .about {
+    background: #5c5a57;
+  }
+
+  .organisers {
+    background: #648494;
+  }
+
+  footer {
+    padding-left: 0;
+  }
+
+  .main {
+    width: 41.43426%;
+    float: left;
+    margin-right: 0.39841%;
+    display: inline;
+    background: #5c5a57;
+  }
+
+  .sidebar {
+    width: 58.16733%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+    background: #648494;
+    padding-top: 90px;
+  }
+
+  .section {
+    padding-top: 0.75em;
+  }
+  div.about {
+    width: 100%;
+    background: #5c5a57;
+  }
+
+  .profile-wrap {
+    background: #648494;
+  }
+
+  .skills {
+    color: #5c5a57;
+  }
+
+  /* @end layout */
+  /* @group typography */
+  #header p {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+  }
+
+  h1 {
+    background: #3d454b url(../img/codehub_inv.svg) 280px top no-repeat;
+    background-size: 100px;
+    font-size: 3em;
+    padding-left: 0;
+  }
+
+  h2, h3 {
+    font-family: 'Nova Square', Helvetica, sans-serif;
+    padding-left: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.3125em;
+    line-height: 1.14286em;
+  }
+
+  .profile h3 {
+    background: inherit;
+  }
+
+  .profile .main-data h3 {
+    color: #ecebe3;
+  }
+
+  /* @end typography */
+}
+@media (min-width: 39em) and (min-width: 39em) {
+  .profile .container, #header .inner, #footer .inner {
+    max-width: 41.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile .container:after, #header .inner:after, #footer .inner:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 39em) and (min-width: 39em) {
+  .section {
+    max-width: 41.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*@media (min-width: 60em) {
+  @import "desktop";
+} */
+/*
+$sectionPadding: 2em;
+
+%sectionValues {
+  color: $fontColor;
+  padding: $sectionPadding;
+}
+body{
+  font-size: 16px;
+  font-family: Verdana, san-serif;
+  background: #acc2be;
+  padding: 2em;
+}
+section.about {background:#5c5a57;@extend %sectionValues;}
+section  h2 {font-size: 2.5em; padding:0.5em 0;}
+section.organisers {background:#648494; @extend %sectionValues;}
+header {background:#3d454b;  font-size:1.2em; @extend %sectionValues;}
+h1{
+  font-family: 'Nova Square', Arial, sans-serif;
+  font-size: 5em;
+}
+
+
+p{
+  line-height: 1.5em;
+  margin: 0.75em 0;
+}
+strong {font-weight: 600;color:#d7a75b;} */

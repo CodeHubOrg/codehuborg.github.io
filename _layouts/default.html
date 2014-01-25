@@ -1,11 +1,32 @@
 <!Doctype html>
+<html>
 <head>
   <title> {{ site.title }} </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+      <!--[if (gt IE 8)|(IEMobile)]><!-->
+      <link href="stylesheets/non_ie.css" rel="stylesheet" type="text/css" />
+      <!--<![endif]-->
+     
+      <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+      <!--[if (lt IE 9)&(!IEMobile)]>
+            <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="favicon.ico" />
 </head>
-<body>
-
-"Hello"
-
-{{ content }}
-
+<body class="index">
+  <header id="header">
+    <div class="inner heading">
+      <h1>CodeHub</h1>
+      <ul class="nav">
+        <li class="current section-active"><a href="http://codehub.org.uk"  class="current section-active">Back to main site</a></li>
+      </ul>
+    <div class="inner margins-vert"></div>
+  </header>
+    
+    {{ content }}
+    
+    <footer id="footer"><div class="inner">Codehub 2014</div></footer> 
 </body>
+</html>

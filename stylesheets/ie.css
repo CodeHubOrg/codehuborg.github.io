@@ -1,0 +1,159 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* @group general */
+body {
+  background: #acc2be;
+  color: #ecebe3;
+}
+
+a:link,
+a:visited {
+  color: #d6c9c6;
+}
+
+.inner {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.margins-vert {
+  margin-bottom: 1.5em;
+}
+
+/* @end general */
+/* @group layout */
+.container {
+  background: #648494;
+}
+
+.profile .section {
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 0.75em;
+}
+
+#header {
+  background: #3d454b;
+  overflow: auto;
+}
+
+.about {
+  background: #5c5a57;
+}
+
+.organisers {
+  background: #648494;
+}
+
+#footer {
+  padding-left: 0;
+}
+
+.main {
+  width: 41.43426%;
+  float: left;
+  margin-right: 0.39841%;
+  display: inline;
+  background: #5c5a57;
+}
+
+.sidebar {
+  width: 58.16733%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+  background: #648494;
+  padding-top: 90px;
+}
+
+div.about {
+  width: 100%;
+  background: #5c5a57;
+}
+
+.profile-wrap {
+  background: #648494;
+}
+
+.skills {
+  color: #5c5a57;
+}
+
+/* @end layout */
+/* @group typography */
+#header p {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+h1 {
+  background: #3d454b url(../img/codehub_inv.svg) 280px top no-repeat;
+  background-size: 100px;
+  font-size: 3em;
+  padding-left: 0;
+}
+
+h2, h3 {
+  font-family: 'Nova Square', Helvetica, sans-serif;
+  padding-left: 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3125em;
+  line-height: 1.14286em;
+}
+
+.profile h3 {
+  background: inherit;
+}
+
+.profile .main-data h3 {
+  color: #ecebe3;
+}
+
+/* @end typography */
+body, .container {
+  text-align: center;
+}
+
+.inline-list {
+  float: left;
+}
+.inline-list li {
+  display: inline;
+  float: left;
+}
+
+.nav-wrapper, .nav-wrapper .inline-list {
+  width: 100%;
+}
+
+.nav-wrapper .inline-list li {
+  width: 23%;
+  margin-right: 2%;
+}
+
+#header .inner, #footer .inner,
+.profile .container,
+.index .section {
+  width: 39em;
+  max-width: 39em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.profile .section {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 88%;
+}
+
+h1 {
+  background: #3d454b url(../img/codehub.gif) 280px top no-repeat;
+}
