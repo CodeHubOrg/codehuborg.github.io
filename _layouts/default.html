@@ -20,7 +20,7 @@
     <div class="inner heading">
       <h1>CodeHub</h1>
       <ul class="nav">
-        <li class="{{ page.url }}"><a href="/contents.html">Contents</a>
+        <li{% if page.url == '/contents.html' %} class="current section-active" {% endif %}><a href="/contents.html">Contents</a>
         <li><a href="http://codehub.org.uk"  class="current section-active">Back to main site</a></li>
       </ul>
     <div class="inner margins-vert"></div>
