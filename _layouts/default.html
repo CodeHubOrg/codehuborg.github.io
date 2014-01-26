@@ -38,6 +38,13 @@
   </div>
     <section class="organisers section">
     {{ content }}
+    {% if page.categories != '' %}
+    <p>Posted in categories: 
+      {% for category in page.categories %}
+        <a href="/categories.html#{{ category | first }}">{{ category | first }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
     </section>
   <footer id="footer"><div class="inner">Codehub 2014</div></footer> 
 </body>
