@@ -1,6 +1,6 @@
 ---
-layout: default
-title: GitHub Pages for CodeHub
+layout: post
+title: GitHub Pages
 categories:
 - github
 - jekyll

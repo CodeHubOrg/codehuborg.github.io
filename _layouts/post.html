@@ -1,0 +1,35 @@
+{% include head.html %}
+<body class="index">
+  {% include header_nav.html %}
+  <div class="container cf">
+
+    <div class="about">
+      <section class="about section">
+        <div class="for-you">
+          <h2>{{ page.title }}
+        </div>
+      </section>
+    </div>
+  
+  </div>
+  <div class="container">
+    <section class="organisers section">      
+      <article>
+        
+        <h3>Posted on: {{ page.date | date_to_long_string }}</h3>
+        <div class="inner">
+        {{ content }}
+          {% if page.categories %}
+          <p>Posted in Categories: 
+          {% for category in page.categories %}
+              <a href="/categories.html#{{ category | First }}">{{ category | First }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </article>
+    </section>
+  </div>
+  {% include footer.html %}
+  
+</body>
+</html>

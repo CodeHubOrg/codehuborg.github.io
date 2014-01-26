@@ -1,45 +1,26 @@
-<!Doctype html>
-<html>
-<head>
-  <title> {{ site.title }} </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-      <!--[if (gt IE 8)|(IEMobile)]><!-->
-      <link href="/stylesheets/non_ie.css" rel="stylesheet" type="text/css" />
-      <!--<![endif]-->
-     
-      <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-      <!--[if (lt IE 9)&(!IEMobile)]>
-            <link href="/stylesheets/ie.css" rel="stylesheet" type="text/css" />
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
-      <link rel="shortcut icon" href="/favicon.ico" />
-</head>
+{% include head.html %}
 <body class="index">
-  <header id="header">
-    <div class="inner heading">
-      <h1><a href="/">CodePages</a></h1>
-      <ul class="nav">
-        <li{% if page.url == '/contents.html' %} class="current section-active" {% endif %}><a href="/contents.html">Index</a>
-        <li{% if page.url == '/categories.html' %} class="current section-active" {% endif %}><a href="/categories.html">Categories</a>
-        <li><a href="http://github.com/CodeHubOrg">Git Repos</a>
-        <li><a href="http://codehub.org.uk"  class="current section-active">Main CodeHub site</a></li>
-      </ul>
-    <div class="inner margins-vert"></div>
-  </header>
+  {% include header_nav.html %}
+    
   <div class="container cf">
 
-  <div class="about">
-    <section class="about section">
-      <div class="for-you">
-        <h2>{{ page.title }}
-      </div>
-    </section>
-  </div>
-    <section class="organisers section">
-    {{ content }}
-  
-    </section>
-  <footer id="footer"><div class="inner">Codehub 2014</div></footer> 
+    <div class="about">
+        <section class="about section">
+          <div class="for-you">
+            <h2>{{ page.title }}</h2>
+          </div>
+        </section>
+    </div> 
+    
+  </div> 
+
+  <div class="container">
+      <section class="organisers section">       
+          {{ content }}
+      </section>
+  </div><!-- container -->
+
+ 
+{% include footer.html %}
 </body>
 </html>

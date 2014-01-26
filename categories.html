@@ -2,18 +2,20 @@
 layout: default
 title: Categories
 ---
-
+<h2>Categories</h2>
+<div class="inner margin-vert">
 <ul>
 {% for category in site.categories %}
   <li><a href="#{{ category | first }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
- 
-<h2>Posts by Categories</h2>
- 
+</div> 
+
+<h2>Posts by Categories</h2> 
+<div class="inner margin-vert">
 <ul>
 {% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
+  <li class="categories"><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
     {% for posts in category offset: 1 %}
       {% for post in posts %}
@@ -24,4 +26,5 @@ title: Categories
   </li>
 {% endfor %}
 </ul>
+</div>
 
