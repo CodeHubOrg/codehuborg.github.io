@@ -2,6 +2,11 @@
 layout: default
 title: CodeHub Docs
 ---
-<h2>CodeHub goes Github</h2>
-<p>We will document CodeHub sessions here. Watch this space.</p>
+<article>
+    {% for post in site.posts %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h3>Posted on {{ post.date }} </h3>
+        {{ post.content }}        
+    {% endfor %}
+</article>
 
