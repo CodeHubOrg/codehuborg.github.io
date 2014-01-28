@@ -479,34 +479,14 @@ li.categories {
   }
 }
 
-/*@media (min-width: 60em) {
-  @import "desktop";
-} */
-/*
-$sectionPadding: 2em;
-
-%sectionValues {
-  color: $fontColor;
-  padding: $sectionPadding;
-}
-body{
-  font-size: 16px;
-  font-family: Verdana, san-serif;
-  background: #acc2be;
-  padding: 2em;
-}
-section.about {background:#5c5a57;@extend %sectionValues;}
-section  h2 {font-size: 2.5em; padding:0.5em 0;}
-section.organisers {background:#648494; @extend %sectionValues;}
-header {background:#6d757b;  font-size:1.2em; @extend %sectionValues;}
-h1{
-  font-family: 'Nova Square', Arial, sans-serif;
-  font-size: 5em;
+.posts-content {
+  padding-top: 0.75em;
+  background: #efefef;
+  color: #444;
 }
 
-
-p{
-  line-height: 1.5em;
-  margin: 0.75em 0;
+.posts-content a {
+  color: purple;
 }
-strong {font-weight: 600;color:#d7a75b;} */
+
+.highlight  { background: #222; margin-right: 20px; }

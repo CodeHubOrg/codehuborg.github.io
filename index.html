@@ -7,7 +7,7 @@ title: CodeHub Documentation
 <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <h3>Posted on {{ post.date | date_to_long_string }} </h3>
-    <div class="inner margin-vert">
+    <div class="inner margin-vert posts-content">
       {{ post.content }}  
       {% if post.categories %}    
         <p>Posted in Categories: 
