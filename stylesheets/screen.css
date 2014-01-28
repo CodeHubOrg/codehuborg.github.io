@@ -235,6 +235,17 @@ h3 {
   text-decoration: none;
   color: #444;
 }
+
+.nav li.gitlink a, .nav li.codehublink a {
+  color: #acc2be;
+}
+.nav li.gitlink {
+  background: #4d555b url(../img/octocat.png) no-repeat 5px 5px;
+}
+.nav li.codehublink {
+  background: url("../img/codehub.png") no-repeat scroll 5px 2px #4d555b;
+}
+
 @media (min-width: 30em) {
   .nav li {
     width: 24.09639%;
