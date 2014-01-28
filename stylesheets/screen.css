@@ -479,8 +479,9 @@ li.categories {
   }
 }
 
+
 .posts-content {
-  padding-top: 0.75em;
+  padding: 0.75em 0 0 0.5em;
   background: #efefef;
   color: #444;
 }
@@ -489,7 +490,15 @@ li.categories {
   color: purple;
 }
 
-.highlight  { background: #222; margin-right: 20px; }
+.posts-content h2, .posts-content h3{
+  background: none;
+  color: #444;
+}
+
+
+
+
+.highlight  { background: #222; margin-right: 20px; color: #ededed;}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
