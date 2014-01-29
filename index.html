@@ -8,6 +8,7 @@ title: CodeHub Documentation
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <h3>Posted on {{ post.date | date_to_long_string }} </h3>
     <div class="inner margin-vert posts-content">
+      <div class="posts-inner">
       {{ post.content }}  
       {% if post.categories %}    
         <p>Posted in Categories: 
@@ -15,6 +16,7 @@ title: CodeHub Documentation
           <a href="/categories.html#{{ category | First }}">{{ category | First }}</a>
         {% endfor %}
       {% endif %} 
+      </div>
     </div>
 </article> 
 {% endfor %}

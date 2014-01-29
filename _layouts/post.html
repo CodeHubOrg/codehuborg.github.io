@@ -18,13 +18,15 @@
         
         <h3>Posted on: {{ page.date | date_to_long_string }}</h3>
         <div class="inner posts-content">
+          <div class="posts-inner">
         {{ content }}
           {% if page.categories %}
           <p>Posted in Categories: 
-          {% for category in page.categories %}
+            {% for category in page.categories %}
               <a href="/categories.html#{{ category | First }}">{{ category | First }}</a>
             {% endfor %}
           {% endif %}
+          </div>
         </div>
       </article>
     </section>
