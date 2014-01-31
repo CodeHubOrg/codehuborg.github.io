@@ -29,15 +29,28 @@ a:visited {
   background: #648494;
 }
 
-.profile .section {
-  width: 88%;
-  margin: 0 auto;
-  padding-top: 0.75em;
+@media (min-width: 39em) {
+  .profile .container, #header .inner, #footer .inner {
+    max-width: 41.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile .container:after, #header .inner:after, #footer .inner:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 #header {
   background: #3d454b;
   overflow: auto;
+}
+
+#footer {
+  padding-left: 0;
 }
 
 .about {
@@ -48,7 +61,7 @@ a:visited {
   background: #648494;
 }
 
-#footer {
+footer {
   padding-left: 0;
 }
 
@@ -68,6 +81,24 @@ a:visited {
   display: inline;
   background: #648494;
   padding-top: 90px;
+}
+
+.section {
+  padding-top: 0.75em;
+}
+@media (min-width: 39em) {
+  .section {
+    max-width: 41.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 div.about {
@@ -103,6 +134,7 @@ h2, h3 {
 }
 
 h3 {
+  background: inherit;
   font-weight: 400;
   font-size: 1.3125em;
   line-height: 1.14286em;
@@ -121,26 +153,26 @@ body, .container {
   text-align: center;
 }
 
-.inline-list {
+.nav-wrapper .nav.inline-list {
   float: left;
 }
-.inline-list li {
+.nav-wrapper .nav.inline-list li {
   display: inline;
   float: left;
 }
 
-.nav-wrapper, .nav-wrapper .inline-list {
+.nav-wrapper, .nav-wrapper .nav.inline-list {
   width: 100%;
 }
 
-.nav-wrapper .inline-list li {
+.nav-wrapper .nav.inline-list li {
   width: 23%;
   margin-right: 2%;
 }
 
 #header .inner, #footer .inner,
 .profile .container,
-.index .section {
+.index .section, .organisers.section, .about.section, .ccm-profile-member-list, .ccm-profile-membe {
   width: 39em;
   max-width: 39em;
   margin-left: auto;
@@ -155,5 +187,5 @@ body, .container {
 }
 
 h1 {
-  background: #3d454b url(../img/codehub.gif) 280px top no-repeat;
+  background: #3d454b url(../img/codehub.gif) right top no-repeat;
 }
