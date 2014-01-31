@@ -122,7 +122,7 @@ div.about {
 }
 
 h1 {
-  background: #3d454b url(../img/codehub_inv.svg) 280px top no-repeat;
+  background: #6d757b url(../img/codehub_inv.svg) 280px top no-repeat;
   background-size: 100px;
   font-size: 3em;
   padding-left: 0;
@@ -187,5 +187,5 @@ body, .container {
 }
 
 h1 {
-  background: #3d454b url(../img/codehub.gif) right top no-repeat;
+  background: #6d757b url(../img/codehub.gif) right top no-repeat;
 }
