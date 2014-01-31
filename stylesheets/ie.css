@@ -5,7 +5,7 @@
  * <![endif]--> */
 /* @group general */
 body {
-  background: #6d757b;
+  background: #acc2be;
   color: #ecebe3;
 }
 
@@ -45,7 +45,7 @@ a:visited {
 }
 
 #header {
-  background: #3d454b;
+  background: #6d757b;
   overflow: auto;
 }
 
