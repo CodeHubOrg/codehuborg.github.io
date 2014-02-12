@@ -59,7 +59,7 @@ or using the numeric interpretation:
 ### About users and groups
 Each user belongs to a group. When a new user is created, as default option a group with the user's name will be created and the user assigned to it. 
 
-In this example, we will work with three users: root, www-data (the server user - or apache user), and the login user
+In this example, we will work with three users: root, www-data (the server user - or Apache user), and the login user
 
 Some useful commands:
 
@@ -119,14 +119,14 @@ Inside our cms we create an index file, a modules directory with two modules, an
   # check with ls -al
 {% endhighlight %}
 
-What do we really need? The crucial thing is that the Apache user (www-data) needs to:<br />
-\- read index.html<br />
-\- read and traverse modules folders<br />
-\- read and write to upload folder only<br />
+What do we really need? The crucial thing is that the Apache user (*www-data*) needs to:<br />
+\- read *index.html*<br />
+\- read and traverse *modules* folders<br />
+\- read and write to *upload* folder only<br />
 
 How can we do that?<br />
 \- Keep ownership and write access with the login user<br />
-\- Change the group to that of the apache user, and assign it only read access<br />
+\- Change the group to that of the Apache user, and assign it only read access<br />
 \- The 'other' group will then not need any access at all for files being served<br />
 
 So we change group ownership recursively for the modules. Then we can change the permissions of 'others' to 0 (---), that of the Apache user to 5 (r-x)
@@ -159,7 +159,7 @@ Uploads is a special case, because *www-data* needs to write here as well. We co
   drwxrwx---  2 www-data katja    4096 Feb 11 00:05 upload  
 {% endhighlight %}
 
-Question: What would be displayed if you have this running on a server, and you change the group of index.html back to your login user, but leave the permissions? 
+Question: What would be displayed if you have this running on a server, and you change the group of *index.html* back to your login user, but leave the permissions? 
 <p>&nbsp;</p>
 
 ### Setting permissions recursively 
