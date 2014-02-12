@@ -9,7 +9,7 @@ categories:
 
 Our first meetup this year was stymied a bit by the bad weather, but seven of us were there in the end and we had some good discussions &mdash; not only about the intended topics, but more besides. 
 
-As promised, I am putting up some documentation which for now mainly consists of an example of working with file permissions. If you're like me, this is probably something you often kind of 'muddled through' without knowing all the details. I have certainly benefited form looking more closely at it.
+As promised, I am putting up some documentation which for now mainly consists of an example of working with file permissions. If you're like me, this is probably something you often kind of 'muddled through' without knowing all the details. I have certainly benefited from looking more closely at it.
 
 Chrome Dev Tools
 ----------------
