@@ -98,7 +98,7 @@ Note: For changing permissions, it is sufficient to be the file owner, for chang
 
 ### A practical example - Increase security by restricting access
 
-Note: This is assuming you are on a system that has an Apache server set up, which means there is as www-data user and group. If you don't have that, just use a user and corresponding group of your choosing.
+Note: This is assuming you are on a system that has an Apache server set up, which means there is a www-data user and group. If you don't have that, just use a user and corresponding group of your choosing.
 
 In your home directory - or even a local website directory if you have one for testing -, create a folder called  'mycms', then cd into it
 
