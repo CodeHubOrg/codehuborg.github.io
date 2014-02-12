@@ -18,7 +18,7 @@ For the Chrome Dev Tools, this is a good tutorial to work through:
 
 File Permissions and Ownership
 ------------------------------
-To get an overview about file permissions and ownership in your current directory, use the <strong>ls</strong> with the -l flag (and -a for including dot files):
+To get an overview about file permissions and ownership in your current directory, use the <strong>ls</strong> command with the -l flag (and -a for including dot files):
 
 {% highlight bash %}    
   $ ls -al #for detailed information about files in current directory
@@ -29,7 +29,7 @@ To get an overview about file permissions and ownership in your current director
   drwxr-x---  4 katja    www-data 4096 Feb 11 00:27 modules
   drwxrwx---  2 www-data katja    4096 Feb 11 00:05 upload   
 {% endhighlight %}  
-You can also check a single file by using the comand like this: <strong>ls -l [filename] </strong>:
+You can also check a single file by using the command like this: <strong>ls -l [filename] </strong>:
 
 {% highlight bash %}    
   $ ls -dl index.html
@@ -98,6 +98,8 @@ Note: For changing permissions, it is sufficient to be the file owner, for chang
 
 ### A practical example - Increase security by restricting access
 
+Note: This is assuming you are on a system that has an Apache server set up, which means there is as www-data user and group. If you don't have that, just use a user and corresponding group of your choosing.
+
 In your home directory - or even a local website directory if you have one for testing -, create a folder called  'mycms', then cd into it
 
 {% highlight bash %}
@@ -105,7 +107,7 @@ In your home directory - or even a local website directory if you have one for t
   $ cd mycms
 {% endhighlight %}
 
-Inside our cms we create an index file, a modules directory with two modules, and an upload director.
+Inside our cms we create an index file, a modules directory with two modules, and an upload directory.
 
 {% highlight bash %}
   $ touch index.html
