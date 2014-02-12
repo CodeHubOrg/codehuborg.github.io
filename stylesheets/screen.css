@@ -76,6 +76,17 @@ p {
   margin-bottom: 0.75em;
 }
 
+em{
+  font-style: italic;
+}
+
+strong{
+  font-weight: bold; 
+}
+.posts-content strong{
+  background: inherit;
+}
+
 a:link,
 a:visited {
   color: #665956;
@@ -187,11 +198,6 @@ h3 {
   background: #648494;
 }
 
-.organisers strong {
-  font-weight: bold;
-  background: #acc2be;
-  color: #555;
-}
 .organisers strong a {
   color: #5c5a57;
 }
@@ -495,15 +501,17 @@ li.categories {
   margin: 0 0.5em;
 }
 
-
-
 .posts-content h2, .posts-content h3{
   background: none;
   color: #444;
   padding-left: 0;
 }
 
-.highlight  { background: #222; margin-right: 20px; color: #ededed; overflow: scroll;}
+.posts-content p{
+  margin: 0.75em 0;
+}
+
+.highlight  { background: #222; margin-right: 20px; color: #ededed; overflow: scroll; font-family: monospace;}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
