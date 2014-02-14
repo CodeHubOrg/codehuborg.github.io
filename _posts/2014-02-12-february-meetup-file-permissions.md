@@ -14,7 +14,8 @@ As promised, I am putting up some documentation which for now mainly consists of
 Chrome Dev Tools
 ----------------
 For the Chrome Dev Tools, this is a good tutorial to work through: 
-[http://discover-devtools.codeschool.com/](http://discover-devtools.codeschool.com/)
+[http://discover-devtools.codeschool.com/](http://discover-devtools.codeschool.com/)<br />
+Also, check out Google\'s documentation here: [https://developers.google.com/chrome-developer-tools/](https://developers.google.com/chrome-developer-tools/)
 
 File Permissions and Ownership
 ------------------------------
