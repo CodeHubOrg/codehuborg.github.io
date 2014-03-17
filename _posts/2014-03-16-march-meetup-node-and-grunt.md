@@ -8,12 +8,12 @@ categories:
 - express
 ---
 
-At this month\'s meeting Duncan gave a workshop about [Node](http://nodejs.org/) and [Grunt](http://gruntjs.com/), which touched many techniques in JavaScript development along the way (e.g. Modularisation, Package Management, JSHint, Testing).
+At this month\'s meetup Duncan gave a workshop about [Node](http://nodejs.org/) and [Grunt](http://gruntjs.com/), which touched on many techniques in JavaScript development along the way (e.g. Modularisation, Package Management, JSHint, Testing).
 
 Some facts about Node I didn\'t know: It has the V8 engine integrated, you can use it to create web <em>and</em> desktop applications, and dependencies in Node are managed with the CommonJs library. 
 
 I found interesting to learn about dependency management in Node. 
-Each module has its own submodules. Even if there are common dependencies, they will be downloaded for each module separately. You might even get different versions. This way conflicts are avoided, and the files are ususally not very big. 
+Each module has its own submodules. Even if there are common dependencies, they will be downloaded for each module separately. You might even get different versions. This way conflicts are avoided, also the files are ususally not very big. 
 
 The workshop can be found on our GitHub account:
 [https://github.com/CodeHubOrg/node-grunt-workshop](https://github.com/CodeHubOrg/node-grunt-workshop)
