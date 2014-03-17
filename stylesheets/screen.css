@@ -87,6 +87,18 @@ strong{
   background: inherit;
 }
 
+.posts-content ol{
+  list-style: decimal;
+}
+
+.posts-content ul{
+  list-style: disc;
+}
+
+.posts-content ul li{
+  margin-left: 1em;
+}
+
 a:link,
 a:visited {
   color: #665956;
