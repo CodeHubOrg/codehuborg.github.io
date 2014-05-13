@@ -72,9 +72,6 @@ This is an example from the Mozilla Developer Network. Note that in an svg file 
 {% endhighlight %} 
 
 
-<iframe src="/img/lines.svg" height="350"></iframe>
-
-
 You can try out more shapes here: [http://scriptdraw.com/](http://scriptdraw.com/)
 
 The most powerful shape element is \<path\>. It can be used to draw all the other elements. It has an attribute D, which contains a series of commands and parameters to draw a line. For example M 10 20 means "move to point 10 20", C stands for Cubic Bezier curve, and Q for quadratic one. Z is used for closing a shape.
