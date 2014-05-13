@@ -49,17 +49,7 @@ Let's start playing with the line shape.
 {% endhighlight %} 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="400">
-
-<line x1="5" y1="5" stroke="red" x2="200" y2="20" />
-
-<line x1="20" y1="40" stroke="#444" stroke-width="25" x2="120" y2="300" stroke-linecap="round" />
-<line x1="20" y1="40" stroke="#cce" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="120" y2="300"  />
-
-<line x1="120" y1="40" stroke="#444" stroke-width="25" x2="20" y2="300" stroke-linecap="round" />
-<line x1="120" y1="40" stroke="#bc8" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="20" y2="300"  />
-
-</svg>
+<iframe src="/img/lines.svg"></iframe>
 
 
 ### 2. More Shapes 
@@ -83,7 +73,7 @@ You can try out more shapes here: [http://scriptdraw.com/](http://scriptdraw.com
 
 The most powerful shape element is \<path\>. It can be used to draw all the other elements. It has an attribute D, which contains a series of commands and parameters to draw a line. For example M 10 20 means "move to point 10 20", C stands for Cubic Bezier curve, and Q for quadratic one. Z is used for closing a shape.
 
-For example \<path d="M10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"/\> 
+For example \<path d=\"M10 10 H 90 V 90 H 10 Z\" fill=\"transparent\" stroke=\"black\"/\> 
 
 There is a detailed section on the path element on MDN: [https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)
 
@@ -140,6 +130,8 @@ We are drawing one 'petal' of the pinwheel as two path shapes and put them in a 
 </svg>
 {% endhighlight %} 
 
+<iframe src="/img/one_petal.svg"></iframe>
+
 To reuse the petal, we use the \<use\> element. The element that you want to reference is included as a link. Make sure that the href attribute is prefixed by the xlink namespace. The namespace also needs to be declared in the root element! 
 
 We also need to rotate the three remaining petals at the same time. For that we use the \'transform\' attribute. Finally, we wrap the whole wheel in a group withe the id "wheel".
@@ -169,7 +161,9 @@ We also need to rotate the three remaining petals at the same time. For that we 
 </svg>
 {% endhighlight %} 
 
-Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. It is most likely to work if the element is embedded in the page with the \<embed\> tag. 
+<iframe src="/img/pinwheel_incompl.svg"></iframe>
+
+Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. The element needs to be embedded with an \<embed\> tag or linked to within an iframe.
 
 <p>&nbsp;</p>
 
@@ -235,7 +229,7 @@ function changeColor(){
 </svg>
 {% endhighlight %} 
 
-I did not manage to embed the svg here (partly due to the nature of Jekyll/GitHub pages, couldn\'t figure out how to, so far). The finished example can be seen here: [pinwheel](/img/pinwheel.svg)
+<iframe src="/img/pinwheel.svg"></iframe>
 
 Or an unscaled version here: [Big pinwheel](/img/pinwheel_big.svg)
 
