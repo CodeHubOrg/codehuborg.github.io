@@ -7,10 +7,10 @@ categories:
 
 With increasing browser support, SVG (Scalable Vector Graphics) is finally becoming a valid option for creating images that can scale without loss across multiple viewport sizes.
 
-There are a number of areas where SVG can be useful: 
+There are a number of areas where SVG can be useful, for example: 
 <ul>
 <li>Icons that can be styled with css</li>
-<li>Creating graphs and other diagrams like pie charts, columns charts</li>
+<li>Generated graphs and other diagrams like pie charts, columns charts</li>
 <li>Animated images</li>
 </ul>
 
@@ -96,37 +96,37 @@ We will now start creating an SVG image, which we can later animate. We will def
 The \<defs\> element is used to define and element for later reuse. This could also be a gradient or pattern. 
 The \<g\> element groups elements together. By assigning an id to the group element, it can be treated as a whole. 
 
-Let's start creating a whirligig:
+Let's start creating a pinwheel:
 
 First, our svg element with a title inside. It's all markup!
 
 {% highlight xml %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
+<title>Pinwheel</title>
 </svg>
 {% endhighlight %} 
 
-We are using a /<defs/> element for the whirligig. The id is assigned to the group inside the /<defs/> element though. Then we start drawing the stalk as a rectangle. 
+We are using a /<defs/> element for the pinwheel. The id is assigned to the group inside the \<defs\> element though. Then we start drawing the stalk as a rectangle. 
 
 {% highlight xml %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
+<title>Pinwheel</title>
 <defs>
-  <g id="whirligig">
+  <g id="pinwheel">
    <rect x="300" y="250" height="320" width="16" fill="#28b" />
   </g>
 </defs>
 </svg>
 {% endhighlight %} 
 
-We are drawing one 'petal' of the whirligig as two path shapes and put them in a group called "p": 
+We are drawing one 'petal' of the pinwheel as two path shapes and put them in a group called "p": 
 
 
 {% highlight xml %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
+<title>Pinwheel</title>
 <defs>
-  <g id="whirligig">
+  <g id="pinwheel">
    <rect x="300" y="250" height="320" width="16" fill="#28b" />
 
       <g id="p">
@@ -140,26 +140,6 @@ We are drawing one 'petal' of the whirligig as two path shapes and put them in a
 </svg>
 {% endhighlight %} 
 
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
-
-<defs>
-  <g id="whirligig">
-   <rect x="300" y="250" height="320" width="16" fill="#28b" />
-
-
-<g id="p">
-  <path id="wing1" d="M 200 250 L 200 150  Q 200 50 300 50 L 300 250 Z"
-   fill="#fc0"  />
-  <path id="wing2" d="M 200 150 L 200 250 300 250 C 240 210 220 190 200 150 Z" fill="#ff3" />
-</g>
-
-   </g>
-</defs>
-<use xlink:href="#whirligig" transform="scale(0.3,0.3) translate(-20,-40)" />
-</svg>
-
 To reuse the petal, we use the \<use\> element. The element that you want to reference is included as a link. Make sure that the href attribute is prefixed by the xlink namespace. The namespace also needs to be declared in the root element! 
 
 We also need to rotate the three remaining petals at the same time. For that we use the \'transform\' attribute. Finally, we wrap the whole wheel in a group withe the id "wheel".
@@ -167,9 +147,9 @@ We also need to rotate the three remaining petals at the same time. For that we 
 
 {% highlight xml %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
+<title>Pinwheel</title>
 <defs>
-  <g id="whirligig">
+  <g id="pinwheel">
    <rect x="300" y="250" height="320" width="16" fill="#28b" />
 
     <g id="wheel">
@@ -191,32 +171,7 @@ We also need to rotate the three remaining petals at the same time. For that we 
 
 Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. It is most likely to work if the element is embedded in the page with the \<embed\> tag. 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<title>Whirligig</title>
-<defs>
-  <g id="whirligig">
-   <rect x="300" y="250" height="320" width="16" fill="#28b" />
-
-    <g id="wheel"> 
-      <g id="p">
-        <path id="wing1" d="M 200 250 L 200 150  Q 200 50 300 50 L 300 250 Z"
-         fill="#fc0"  />
-        <path id="wing2" d="M 200 150 L 200 250 300 250 C 240 210 220 190 200 150 Z" fill="#ff3" />
-      </g>
-
-    <use xlink:href="#p" transform="rotate(90 300 250)" />
-    <use xlink:href="#p" transform="rotate(180 300 250)" />
-    <use xlink:href="#p" transform="rotate(270 300 250)" />
-    </g>
-  
-  </g>
-</defs>
-
-<use xlink:href="#whirligig" transform="scale(0.3,0.3) translate(-20,-40)" />
-</svg>
-
 <p>&nbsp;</p>
-
 
 ### 4. Animation
 
@@ -229,7 +184,7 @@ Let's complete our example and make the petals rotate (and change colour - but h
 {% highlight xml %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
 
-<title>Whirligig</title>
+<title>Pinwheel</title>
 
 <script><![CDATA[
 function changeColor(){
@@ -248,7 +203,7 @@ function changeColor(){
 
 <defs>
 
-  <g id="whirligig">
+  <g id="pinwheel">
   <rect x="300" y="250" height="320" width="16" fill="#28b" />
 
     <g id="wheel">
@@ -276,19 +231,19 @@ function changeColor(){
 
 </defs>
 
-<use xlink:href="#whirligig" transform="scale(0.3,0.3) translate(-20,-40)" />
+<use xlink:href="#pinwheel" transform="scale(0.3,0.3) translate(-20,-40)" />
 </svg>
 {% endhighlight %} 
 
-I did not manage to embed the svg here (also due to the nature of Jekyll/GitHub pages, couldn\'t figure out how to, so far). The finished example can be seen here: [Whirligig](/img/whirligig.svg)
+I did not manage to embed the svg here (partly due to the nature of Jekyll/GitHub pages, couldn\'t figure out how to, so far). The finished example can be seen here: [pinwheel](/img/pinwheel.svg)
 
-Or an unscaled version here: [Big Whirligig](/img/whirligig_big.svg)
+Or an unscaled version here: [Big pinwheel](/img/pinwheel_big.svg)
 
 <p>&nbsp;</p>
 
 ### 6. More things to do with SVG
 
-Much of the power of SVG lies in how it can be scripted and manipulated by Javascript. Libraries like Raphael.svg, snap.svg and d3.js are available. That would be material for another tutorial!
+Much of the power of SVG lies in how it can be scripted and manipulated by Javascript. Libraries like [Raphael.svg](http://raphaeljs.com/), [snap.svg](http://snapsvg.io/) and [d3.js](http://d3js.org/) are available. That would be material for another tutorial!
 <p>&nbsp;</p>
 
 ### References/Resources: 
