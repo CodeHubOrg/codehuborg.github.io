@@ -52,7 +52,7 @@ Let's start playing with the line shape.
 
 
 
-<iframe src="/img/lines.svg"></iframe>
+<iframe src="/img/lines.svg" height="350" width="300"></iframe>
 
 
 ### 2. More Shapes 
