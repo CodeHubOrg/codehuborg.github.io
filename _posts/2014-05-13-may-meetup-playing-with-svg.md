@@ -13,6 +13,9 @@ There are a number of areas where SVG can be useful, for example:
 + Generated graphs and other diagrams like pie charts, columns charts
 + Animated images
 
+
+In this workshop we will look at the anatomy of svg images and see an example of how they can be manipulated.
+
 <p>&nbsp;</p>
 
 
@@ -48,7 +51,8 @@ Let's start playing with the line shape.
 {% endhighlight %} 
 
 
-<p>&nbsp;</p>
+
+<iframe src="/img/lines.svg"></iframe>
 
 
 ### 2. More Shapes 
@@ -81,77 +85,6 @@ There is a detailed section on the path element on MDN: [https://developer.mozil
 
 <p>&nbsp;</p>
 
-### 1. Anatomy of an SVG element
-
-In its most basic form the svg element only requires a link to the svg namespace and the version number. You can also add other namespaces. An additional namespace that makes sense to include is the xlink namespace. 
-
-Let's start creating an svg element. 
-
-{% highlight xml %}
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-
-</svg>
-{% endhighlight %} 
-
-Shapes in an svg element are being drawn on a grid that spans from the top left to bottom right. A y coordinate of 200 means that the point is drawn 200 units (in most cases pixels) from the top down.
-
-Let's start playing with the line shape. 
-
-
-{% highlight xml %}
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-
-<line x1="5" y1="5" stroke="red" x2="200" y2="20" />
-
-<line x1="20" y1="40" stroke="#444" stroke-width="25" x2="120" y2="300" stroke-linecap="round" />
-<line x1="20" y1="40" stroke="#cce" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="120" y2="300"  />
-
-<line x1="120" y1="40" stroke="#444" stroke-width="25" x2="20" y2="300" stroke-linecap="round" />
-<line x1="120" y1="40" stroke="#bc8" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="20" y2="300"  />
-
-</svg>
-{% endhighlight %} 
-
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="400">
-
-<line x1="5" y1="5" stroke="red" x2="200" y2="20" />
-
-<line x1="20" y1="40" stroke="#444" stroke-width="25" x2="120" y2="300" stroke-linecap="round" />
-<line x1="20" y1="40" stroke="#cce" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="120" y2="300"  />
-
-<line x1="120" y1="40" stroke="#444" stroke-width="25" x2="20" y2="300" stroke-linecap="round" />
-<line x1="120" y1="40" stroke="#bc8" stroke-width="25" stroke-dasharray="5,2,14,5,7,2,8"  x2="20" y2="300"  />
-
-</svg>
-
-
-### 2. More Shapes 
-
-This is an example from the Mozilla Developer Network. Note that in an svg file you normally have an xml declaration before the svg element. 
-
-
-{% highlight xml %}
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200" >
-
-<rect width="100%" height="100%" fill="red" />
-<circle cx="150" cy="100" r="80" fill="green" />
-<text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-</svg>
-{% endhighlight %} 
-
-
-You can try out more shapes here: [http://scriptdraw.com/](http://scriptdraw.com/)
-
-The most powerful shape element is \<path\>. It can be used to draw all the other elements. It has an attribute D, which contains a series of commands and parameters to draw a line. For example M 10 20 means "move to point 10 20", C stands for Cubic Bezier curve, and Q for quadratic one. Z is used for closing a shape.
-
-For example \<path d="M10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"/\> 
-
-There is a detailed section on the path element on MDN: [https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)
-
-<p>&nbsp;</p>
 
 ### 3. Combining and reusing shapes
 
@@ -236,7 +169,9 @@ We also need to rotate the three remaining petals at the same time. For that we 
 </svg>
 {% endhighlight %} 
 
-Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. It is most likely to work if the element is embedded in the page with the \<embed\> tag. 
+<iframe src="/img/pinwheel_incompl.svg"></iframe>
+
+Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. The element needs to be embedded with an \<embed\> tag or linked to within an iframe.
 
 <p>&nbsp;</p>
 
@@ -302,12 +237,7 @@ function changeColor(){
 </svg>
 {% endhighlight %} 
 
-
 <iframe src="/img/pinwheel.svg"></iframe>
-
-An unscaled version is here: [Big pinwheel](/img/pinwheel_big.svg)
-
-I did not manage to embed the svg here (partly due to the nature of Jekyll/GitHub pages, couldn\'t figure out how to, so far). The finished example can be seen here: [pinwheel](/img/pinwheel.svg)
 
 Or an unscaled version here: [Big pinwheel](/img/pinwheel_big.svg)
 
@@ -336,7 +266,6 @@ Icons with all the power of SVG:
 [http://useiconic.com/](http://useiconic.com/)
 
 <p>&nbsp;</p>
-
 
 
 
