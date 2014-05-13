@@ -1,5 +1,6 @@
 title: 'Codehub Pages'
 highlighter: 'pygments'
 limit_posts: 0
+markdown: kramdown
 
 
