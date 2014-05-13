@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<title>Whirligig</title>
+<defs>
+  <g id="whirligig">
+   <rect x="300" y="250" height="320" width="16" fill="#28b" />
+
+    <g id="wheel">
+      <g id="p">
+        <path id="wing1" d="M 200 250 L 200 150  Q 200 50 300 50 L 300 250 Z"
+         fill="#fc0"  />
+        <path id="wing2" d="M 200 150 L 200 250 300 250 C 240 210 220 190 200 150 Z" fill="#ff3" />
+      </g>
+
+    <use xlink:href="#p" transform="rotate(90 300 250)" />
+    <use xlink:href="#p" transform="rotate(180 300 250)" />
+    <use xlink:href="#p" transform="rotate(270 300 250)" />
+    </g>
+  
+  </g>
+</defs>
+
+<use xlink:href="#whirligig" transform="scale(0.3,0.3) translate(-20,-40)" />
+</svg>

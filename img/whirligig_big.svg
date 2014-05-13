@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<title>wind wheel</title>
+<script><![CDATA[
+function changeColor(){
+    
+	var w1=document.getElementById("wing1")
+	w1.setAttributeNS(null,"fill","#faa")
+	var w2=document.getElementById("wing2")
+	w2.setAttributeNS(null,"fill","#933")
+	var A=document.getElementById("A")
+	A.beginElement()
+	var t=1000
+    window.setTimeout("A.endElement()",t) 
+	}
+
+]]></script>
+
+<defs>
+<g id="windwheel">
+<rect x="292" y="250" height="320" width="16" fill="#28b" />
+
+<g id="wheel">
+<g id="p">
+<path id="wing1" d="M 200 250 L 200 150  Q 200 50 300 50 L 300 250 Z"
+ fill="#fc0"  />
+<path id="wing2" d="M 200 150 L 200 250 300 250 C 240 210 220 190 200 150 Z" fill="#ff3" />
+</g>
+
+<use xlink:href="#p" transform="rotate(90 300 250)" />
+<use xlink:href="#p" transform="rotate(180 300 250)" />
+<use xlink:href="#p" transform="rotate(270 300 250)" />
+<animateTransform id="A" attributeName="transform" type="rotate" repeatCount="3" onend="changeColor()" dur="2s" from="0 300 250" to="360 300 250" />
+</g>
+
+<circle cx="300" cy="250" r="8" fill="#543" />
+<circle cx="300" cy="250" r="16" fill="none" stroke="#543" stroke-width="8" stroke-dasharray="3,2">
+<animate attributeName="stroke-dashoffset" repeatCount="indefinite" values="1;16" dur="1s" />
+</circle>
+
+</g>
+</defs>
+
+<use xlink:href="#windwheel" />
+
+
+</svg>

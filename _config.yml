@@ -1,5 +1,5 @@
 title: 'Codehub Pages'
-pygments: true
+highlighter: 'pygments'
 limit_posts: 0
 
 
