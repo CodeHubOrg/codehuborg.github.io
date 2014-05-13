@@ -168,7 +168,7 @@ We also need to rotate the three remaining petals at the same time. For that we 
 
 <iframe src="/img/pinwheel_incompl.svg"></iframe>
 
-Up to here, (in Firefox 29 on Ubuntu) it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. In Chrome (34) it seems to work even less. The element needs to be embedded with an \<embed\> tag or linked to within an iframe.
+Please note: Up to here, it worked to have the svg element inline in the web page. To make the rotation visible, this is not sufficient anymore. The element needs to be embedded with an \<embed\> tag or linked to within an iframe.
 
 <p>&nbsp;</p>
 
