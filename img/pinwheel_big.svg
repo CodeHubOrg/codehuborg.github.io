@@ -9,8 +9,6 @@ function changeColor(){
 	w2.setAttributeNS(null,"fill","#933")
 	var A=document.getElementById("A")
 	A.beginElement()
-	var t=1000
-    window.setTimeout("A.endElement()",t) 
 	}
 
 ]]></script>
