@@ -3,6 +3,7 @@ layout: post
 title: May Meetup - Playing with SVG
 categories:
 - svg
+- animation
 ---
 
 With increasing browser support, SVG (Scalable Vector Graphics) is finally becoming a valid option for creating images that can scale without loss across multiple viewport sizes.
