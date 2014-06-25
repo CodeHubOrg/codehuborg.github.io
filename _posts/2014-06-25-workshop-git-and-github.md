@@ -23,7 +23,7 @@ I am glad how this workshop went, and we had some very positive feedback. I am a
 
 ### Resources: 
 
-GitHub Training kit, including cheat sheet: [http://training.github.com/](http://training.github.com/)
+GitHub Training kit, including cheat sheet: [http://training.github.com/kit/](http://training.github.com/kit/)
 
 GitHub clients: <br />
 [mac.github.com](http://mac.github.com) <br />
