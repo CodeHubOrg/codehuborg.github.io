@@ -12,6 +12,8 @@ At our June meetup, Duncan took us from first steps in using [D3.js](http://d3js
 
 The example below uses data taken from the [Mood Panda](http://www.moodpanda.com/) app and visualises the number of interactions between members.
 
-<iframe src="http://codehub.local/workshops/d3js/d3js.html" width="650" height="500" />
+<iframe src="http://codehub.org.uk/workshops/d3js/d3js.html" width="650" height="500" />
 
 Duncan's tutorial is available on the CodeHub GitHub repository. It uses Node to set up a local server and express site. Then you uncomment and manipulate the d3.js code in the files bit by bit, and view the results in the browser. 
+
+<p>&nbsp;</p>
