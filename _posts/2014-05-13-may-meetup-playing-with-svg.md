@@ -218,7 +218,6 @@ function changeColor(){
     <use xlink:href="#p" transform="rotate(180 300 250)" />
     <use xlink:href="#p" transform="rotate(270 300 250)" />
     <animateTransform id="A" attributeName="transform" type="rotate" repeatCount="2" onend="changeColor()" dur="2s" from="0 300 250" to="360 300 250" />
-
       </g>
 
 
