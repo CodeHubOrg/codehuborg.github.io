@@ -14,6 +14,6 @@ The example below uses data taken from the [Mood Panda](http://www.moodpanda.com
 
 <iframe src="http://codehub.org.uk/workshops/d3js/d3js.html" width="650" height="500" />
 
-Duncan's tutorial is available on the CodeHub GitHub repository. It uses Node to set up a local server and express site. Then you uncomment and manipulate the d3.js code in the files bit by bit, and view the results in the browser. 
+Duncan's tutorial is available on the CodeHub GitHub repository: [github.com/CodeHubOrg/d3-workshop](https://github.com/CodeHubOrg/d3-workshop). It uses Node to set up a local server and express site. Then you uncomment and manipulate the d3.js code in the files bit by bit, and view the results in the browser. 
 
 <p>&nbsp;</p>
