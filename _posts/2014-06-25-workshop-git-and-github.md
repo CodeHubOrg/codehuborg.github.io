@@ -6,7 +6,7 @@ categories:
 - github
 ---
 
-On 17 June of this year we had our first bigger evening workshop. I think nothing could have been more fitting to have Git and GitHub as the topic, and Andrew Nesbitt, who is a developer at GitHub, as the speaker. We use Git and GitHub a lot for CodeHub (I am publishing this on GitHub pages), and knowing about them is crucial if you want to collaborate on code. 
+On 17 June of this year we had our first bigger evening workshop. I think nothing could have been more fitting than to have Git and GitHub as the topic, and Andrew Nesbitt, who is a developer at GitHub, as the speaker. We use Git and GitHub a lot for CodeHub (I am publishing this on GitHub pages), and knowing about them is crucial if you want to collaborate on code. 
 
 The first thing we did in the workshop was to set up a GitHub repository for each us to use for a [GitHub pages](https://pages.github.com/) website. This way any changes could directly be seen in the browser. Andrew used a special GitHub account set up for his rabbit Bertie. We then cloned the repo to the local machine and manipulated it with basic git commands. (Add and commit files, look up previous commits etc.)
 
