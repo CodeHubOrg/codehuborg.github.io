@@ -8,7 +8,7 @@ categories:
 - data
 ---
 
-At our June meetup, Duncan took us from first steps in using [D3.js](http://d3js.org/) for creating svg elements and simple charts through to creating a [force layout diagram](https://github.com/mbostock/d3/wiki/Force-Layout), which involves some more elaborate code. 
+At our June meetup, Duncan took us from first steps in using [D3.js](http://d3js.org/) for creating svg elements and simple charts through to creating a [force layout diagram](https://github.com/mbostock/d3/wiki/Force-Layout), which involves some more elaborate code. It was a great way to get started with D3.
 
 The example below uses data taken from the [Mood Panda](http://www.moodpanda.com/) app and visualises the number of interactions between members.
 
