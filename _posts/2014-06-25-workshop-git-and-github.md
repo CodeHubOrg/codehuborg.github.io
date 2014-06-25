@@ -12,7 +12,7 @@ The first thing we did in the workshop was to set up a GitHub repository for eac
 
 Something I did not know was that there are GitHub clients for Windows and Mac. These make it a lot easier to interact with GitHub, especially for Windows users. There is no need to generate and install keys anymore. The client also comes with Git and a command-line shell included. 
 
-As a next step, we forked our neighbour's repository, made some changes to it locally, and then issued a pull request. In turn we had to accept the pull request from our neighbour. I had two that created a conflict which took me a bit to sort out, but I managed. GitHub also helps with telling you what commands to use. 
+As a next step, we forked our neighbour's repository, made some changes to it, and then issued a pull request. In turn we had to accept the pull request from our neighbour. I had two that created a conflict which took me a bit to sort out, but I managed. GitHub also helps with telling you what commands to use. 
 
 We then looked at branching and merging. Andrew went through some examples that we could follow along on the command line. 
 
