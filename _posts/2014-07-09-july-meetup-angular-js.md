@@ -28,7 +28,7 @@ But even if at some point I arrived at the conclusion to *not* use a framework, 
 
 To round this off, I\'m just going to mention two more tools. I downloaded a trial version of the [WebStorm](#webstorm) editor, and really liked how you can integrate it with Chrome to have live update in the browser. In fact I liked it in general, and am wondering whether to buy a license. Talking of Chrome, there is the [Batarang](#batarang) extension that lets you visualise scope. dependencies and performance of your app. 
 
-I hope we can have a follow-up session on Angular at some point. And I hope that I'd soon be able to contribute to such a session, though I'd prefer it to be run by somebody else! 
+I hope we can have a follow-up session on Angular at some point. And I hope that I'd soon be able to contribute to such a session, though I'd prefer it to be run by somebody else! In the meantime, thanks to those who turned up, you were lovely.
 
 ### References/Resources: 
 
@@ -56,7 +56,7 @@ I hope we can have a follow-up session on Angular at some point. And I hope that
 <a name="glitches"></a>* The session did not turn out to be as hands-on as planned though, as we faced a serious of technical glitches:<br />
 - The miniport adapter to connect my laptop to screen had inexplicably broken on my way in<br />
 - The wifi was not working** and for some reason we could not get any sufficient tethering either<br />
-- Okay, not really technical: I had not managed to push up my files to GitHub on time, nor managed when I was at the venue; yay for memory stick keyrings..<br />
+- Okay, not really technical: I had not managed to push up my files to GitHub on time, nor managed when I was at the venue; yay for memory stick keyrings.. They are up now though!<br />
 
 ** After moving downstairs to the bar, we got Wifi working on *one* of the laptops which we then connected to the screen
 </div>
