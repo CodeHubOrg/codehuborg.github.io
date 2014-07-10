@@ -10,7 +10,7 @@ Yesterday we had our last CodeHub morning meetup till after the summer. I did a 
 
 Rather than talking much about Angular JS itself, this is an account of some things I came across and found helpful. 
 
-In my workshop, I basically built on two tutorials that I found particularly useful and suitable for passing on to others in a hands-on session[*](#glitches). There is Dan Wahlin's video ["AngularJS Fundamentals in 60-ish Minutes"](#wahlin) which I had first heard about from Maff Rigby at the JS workshop last year. 
+In my workshop (Repos here: [Angular1](https://github.com/CodeHubOrg/AngularJS-1-Fundamentals), [Angular2](https://github.com/CodeHubOrg/AngularJS-2-seed-build-test-with-F1App)), I basically built on two tutorials that I found particularly useful and suitable for passing on to others in a hands-on session[*](#glitches). There is Dan Wahlin's video ["AngularJS Fundamentals in 60-ish Minutes"](#wahlin) which I had first heard about from Maff Rigby at the JS workshop last year. 
 
 The other one I came across after a - generally very helpful - discussion with Duncan Woods, who told me I should look for a tutorial that includes unit testing. It is a [two-part tutorial written by Raoni Boa Ventura](#formula1), and takes you through building a relatively simple app on top of the Angular seed project while explainig all the steps. It includes using an API as the data source and - testing! 
 
@@ -56,7 +56,7 @@ I hope we can have a follow-up session on Angular at some point. And I hope that
 <a name="glitches"></a>* The session did not turn out to be as hands-on as planned though, as we faced a serious of technical glitches:<br />
 - The miniport adapter to connect my laptop to screen had inexplicably broken on my way in<br />
 - The wifi was not working** and for some reason we could not get any sufficient tethering either<br />
-- Okay, not really technical: I had not managed to push up my files to GitHub on time, nor managed when I was at the venue; yay for memory stick keyrings.. They are up now though!<br />
+- Okay, not really technical: I had not managed to push up my files to GitHub on time, nor managed when I was at the venue; yay for memory stick keyrings.. The git repositories are up now though!<br />
 
 ** After moving downstairs to the bar, we got Wifi working on *one* of the laptops which we then connected to the screen
 </div>
