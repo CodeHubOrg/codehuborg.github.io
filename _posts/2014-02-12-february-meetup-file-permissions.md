@@ -1,6 +1,7 @@
 ---
 layout: post
 title: February Meetup - File permissions, Chrome Dev Tools
+author: Katja
 categories:
 - linux
 - dev_tools

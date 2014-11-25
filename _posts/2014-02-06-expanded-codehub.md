@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CodeHub in 2014
+author: Katja
 categories:
 - codehub
 - guidelines

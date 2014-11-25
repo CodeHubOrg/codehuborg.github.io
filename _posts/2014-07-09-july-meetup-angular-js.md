@@ -1,6 +1,7 @@
 ---
 layout: post
 title: July Meetup &mdash; Angular JS 
+author: Katja
 categories:
 - javascript
 - js_frameworks

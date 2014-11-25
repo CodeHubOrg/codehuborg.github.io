@@ -1,6 +1,7 @@
 ---
 layout: post
 title: June Meetup - D3js and more SVG
+author: Katja
 categories:
 - javascript
 - svg

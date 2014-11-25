@@ -1,6 +1,7 @@
 ---
 layout: post
 title: March Meetup - Node and Grunt 
+author: Katja
 categories:
 - javascript
 - grunt

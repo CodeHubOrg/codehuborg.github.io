@@ -4,8 +4,9 @@ title: Categories
 ---
 <h2>Categories</h2>
 <div class="inner margin-vert">
-<ul>
-{% for category in site.categories %}
+{% assign sortedcats = site.categories | sort  %}
+<ul> 
+{% for category in sortedcats %}
   <li><a href="#{{ category | first }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
@@ -14,7 +15,7 @@ title: Categories
 <h2>Posts by Categories</h2> 
 <div class="inner margin-vert">
 <ul>
-{% for category in site.categories %}
+{% for category in sortedcats %}
   <li class="categories"><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
     {% for posts in category offset: 1 %}

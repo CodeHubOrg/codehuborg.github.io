@@ -1,6 +1,7 @@
 ---
 layout: post
 title: April Meetup - DocPad and CSS3 Animations
+author: Katja
 categories:
 - static_sites
 - css

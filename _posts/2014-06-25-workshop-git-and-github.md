@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Git and GitHub workshop
+author: Katja
 categories:
 - git
 - github

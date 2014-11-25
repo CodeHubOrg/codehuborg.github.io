@@ -1,6 +1,7 @@
 ---
 layout: post
 title: May Meetup - Playing with SVG
+author: Katja
 categories:
 - svg
 - animation

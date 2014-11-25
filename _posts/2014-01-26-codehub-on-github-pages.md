@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GitHub Pages
+author: Katja
 categories:
 - github
 - jekyll

@@ -20,12 +20,17 @@
         <div class="posts-content">
           <div class="posts-inner">
         {{ content }}
+          <p>
+          {% if page.author %}
+          By {{ page.author }}<br />
+          {% endif %}
           {% if page.categories %}
-          <p>Posted in Categories: 
+          Posted in Categories: 
             {% for category in page.categories %}
               <a href="/categories.html#{{ category | First }}">{{ category | First }}</a>
             {% endfor %}
           {% endif %}
+          </p>
           </div>
         </div>
       </article>
