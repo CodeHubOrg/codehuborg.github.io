@@ -10,6 +10,9 @@ title: CodeHub (OpenTechSchool Bristol) Documentation
     <div class="margin-vert posts-content">
       <div class="posts-inner">
       {{ post.content }}  
+      {% if post.author %}
+      By {{ post.author }}<br />
+      {% endif %}
       {% if post.categories %}    
         <p>Posted in Categories: 
         {% for category in post.categories %}
