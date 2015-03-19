@@ -8,7 +8,7 @@ categories:
 - workshop
 ---
 
-Our first workshop of the year was on Vagrant and was run by [Carl Hughes](http://twitter.com/codekipple). Carl first gave a presentation about how Vagrant fit into the evolution of a developer's environment - from using Ftp for moving files to the server to using virtual machines, Vagrant and provisioning tools. These tools allow you to automatically replicate development environments and make setting up and collaborating on a project much smoother.    
+Our first workshop of the year was on Vagrant and was run by [Carl Hughes](http://twitter.com/codekipple). Carl first gave a presentation about how Vagrant fits into the evolution of a developer's environment - from using Ftp for moving files to the server to virtual machines, Vagrant and provisioning tools. These tools allow you to automatically replicate development environments and make setting up and collaborating on a project much smoother.    
 
 In the presentation, Carl also introduced the task for this workshop, which was to get a Vagrant up and running that consisted of Ubuntu with Apache, PHP and MySQL installed. The Vagrant also had shared folders with the host OS onto which we had cloned the [CodeHub website repository](). We imported a dummy database (identical to the real CodeHub database except for user information), and could that way make a local version of the [Codehub concrete5 website](http://codehub.org.uk) run on our machines.    
 
