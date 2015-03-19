@@ -11,6 +11,7 @@ categories:
 - express
 - mongo
 - maps
+- workshop
 ---
 
 On the 13th of September, CodeHub hosted a [day-long JavaScript event](http://www.meetup.com/CodeHub-Bristol/events/196402012/) at the YHA in Bristol, which consisted of 7 roughly hour-long workshops by 7 different speakers. With this, we took over from BristolJS who had organised a (two-day) event of this format [a year earlier](http://www.meetup.com/BristolJS/events/130960852).

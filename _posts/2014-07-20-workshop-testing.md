@@ -7,6 +7,7 @@ categories:
 - testing
 - jasmine
 - node
+- workshop
 ---
 
 Our second evening workshop was on Testing. Tom Buckley-Houston gave an introduction into the philosophy and the principles behind testing in software development, as well as giving many live coding examples. I really liked the analogy, that testing is, in a way, as "necessary" as friends are.
