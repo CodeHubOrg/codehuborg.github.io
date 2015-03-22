@@ -13,7 +13,7 @@ Our first workshop of the year was on Vagrant and was run by [Carl Hughes](http:
 In the presentation, Carl also introduced the task for this workshop, which was to get a Vagrant up and running that consisted of Ubuntu with Apache, PHP and MySQL installed. The Vagrant also had shared folders with the host OS onto which we had cloned the [CodeHub website repository](). We imported a dummy database (identical to the real CodeHub database except for user information), and could that way make a local version of the [Codehub concrete5 website](http://codehub.org.uk) run on our machines.    
 
 The workshop was very hands-on and there were a few steps where you could get stuck, but it was good that way, because that is of course what often happens in development. It was a great way to get started. I will also use the Vagrant that I have on my machine now, when I work on the CodeHub website again, and if somebody else wanted to contribute they can use it too. - Just need to get round to it, but as I managed to update these pages now, I am hopeful!
-s        
+       
 ### References/Resources:           
       
 - Carl's slides on Virtualisation, Vagrant, Provisioning: [http://slides.com/codekipple/vagrant101#/](http://slides.com/codekipple/vagrant101#/)   
