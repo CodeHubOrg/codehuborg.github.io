@@ -17,7 +17,7 @@ One very interesting suggestion - based on positive experience - was getting old
 There was some interest in a workshop on how to teach kids to code, so we might organise one in the new year. 
 
 ### References/Resources: 
-- Video of Gicela's talk (slides to come): [https://www.youtube.com/watch?v=sTt4IfOXEZY](https://www.youtube.com/watch?v=sTt4IfOXEZY)
+- Gicela's slides: [http://www.slideshare.net/gicelamorales/10-things-ive-learned-teaching-coding-to-kids](http://www.slideshare.net/gicelamorales/10-things-ive-learned-teaching-coding-to-kids)
 - Video of Danielle's talk: [https://www.slideshare.net/secret/7iyPEILd4skYu0](https://www.slideshare.net/secret/7iyPEILd4skYu0)
 - Danielle's slides: [https://www.slideshare.net/secret/7iyPEILd4skYu0](https://www.slideshare.net/secret/7iyPEILd4skYu0)
 - Programmer and interested in helping out?
