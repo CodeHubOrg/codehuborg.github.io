@@ -162,11 +162,6 @@ a:visited {
   width: 100%;
 }
 
-.codehub-logo {
-  width: 328px;
-  height: 85px;
-  margin: 34px 0 21px 0;
-}
 
 #footer {
   background: #6d757b;
@@ -253,7 +248,7 @@ h3 {
   background: #4d555b url(../img/octocat.png) no-repeat 5px 5px;
 }
 .nav li.codehublink {
-  background: url("../img/codehub.png") no-repeat scroll 5px 2px #4d555b;
+  background: url("../img/codehub-social-small.png") no-repeat scroll 5px 4px #4d555b;
 }
 
 @media (min-width: 30em) {
@@ -430,12 +425,12 @@ li.categories {
     line-height: 1.33333em;
   }
 
-  h1 {
-    background: #6d757b url(../img/codehub_inv.svg) 280px top no-repeat;
-    background-size: 100px;
-    font-size: 3em;
-    padding-left: 0;
-  }
+  
+.codehub-logo {
+  width: 328px;
+  height: 85px;
+  margin: 34px 0 21px 0;
+}
 
   h2, h3 {
     font-family: 'Nova Square', Helvetica, sans-serif;
