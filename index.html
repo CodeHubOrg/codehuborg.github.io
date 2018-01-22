@@ -14,10 +14,11 @@ title: CodeHub (OpenTechSchool Bristol) Documentation
       By {{ post.author }}<br />
       {% endif %}
       {% if post.categories %}    
-        <p>Posted in Categories: 
+        <p>Posted in Categories:
         {% for category in post.categories %}
           <a href="/categories.html#{{ category | First }}">{{ category | First }}</a>
         {% endfor %}
+      </p>
       {% endif %} 
       </div>
     </div>
