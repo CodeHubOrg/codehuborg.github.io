@@ -162,26 +162,18 @@ a:visited {
   width: 100%;
 }
 
+.codehub-logo {
+  width: 328px;
+  height: 85px;
+  margin: 34px 0 21px 0;
+}
+
 #footer {
   background: #6d757b;
 }
 
 /* @end layout */
 /* @group topography */
-h1 {
-  background: #6d757b url(../img/codehub_inv.svg) right top no-repeat;
-  background-size: 60px;
-  color: #ecebe3;
-  height: 1.75em;
-  padding: 0 0.6em;
-  font-size: 1.75em;
-  line-height: 1.71429em;
-  font-family: 'Nova Square', Arial, sans-serif;
-}
-h1 a:link, h1 a:visited {
-  text-decoration: none;
-  color: #ecebe3;
-}
 
 h2 {
   color: #ecebe3;
