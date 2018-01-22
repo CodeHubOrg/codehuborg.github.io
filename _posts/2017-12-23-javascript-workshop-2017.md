@@ -17,23 +17,19 @@ On 24 September 2017 we organised a day of JavaScript workshops, like we did bef
 
 It was a really nice day where everybody got chatting, the venue near TempleStation was ideal, and we had four great talks. You can find the links to slides and materials below. 
 
-- **Alex Jones - Angular (2/4) Fundamentals**     
-          
-    Slides with instructions to build Robot Army App: [http://slides.com/alex-jones/deck](http://slides.com/alex-jones/deck)  
+**Alex Jones - Angular (2/4) Fundamentals**           
+Slides with instructions to build Robot Army App: [http://slides.com/alex-jones/deck](http://slides.com/alex-jones/deck)  
     
-- **Denis Sellu - Intro to hybrid apps with Ionic 3**      
-                                                    
-    [Slides](https://github.com/cookieshq/photo-book/blob/master/Intro%20to%20hybrid%20app%20with%20Ionic%20slides.pdf)          
-    Git repo of Photo Book App: [https://github.com/cookieshq/photo-book](https://github.com/cookieshq/photo-book)
+**Denis Sellu - Intro to hybrid apps with Ionic 3**            
+[Slides](https://github.com/cookieshq/photo-book/blob/master/Intro%20to%20hybrid%20app%20with%20Ionic%20slides.pdf)                   
+Git repo of Photo Book App: [https://github.com/cookieshq/photo-book](https://github.com/cookieshq/photo-book)
     
-- **Bridget McErlean - Introduction to React**       
-           
-    Pens: [https://codepen.io/collection/XJZRQd/](https://codepen.io/collection/XJZRQd/)
+**Bridget McErlean - Introduction to React**       
+Pens: [https://codepen.io/collection/XJZRQd/](https://codepen.io/collection/XJZRQd/)
                           
-- **Liv Franzen - Coding in three dimensions - an introduction to WebVR**  
-                                                  
-    Instructions with link to repo: [https://tailless.github.io/webvr/](https://tailless.github.io/webvr/)           
-    For VR examples, you need an Android Phone with Google VR Services app installed ( requires Android OS version 6+ Marshmallow and gyroscope )
+**Liv Franzen - Coding in three dimensions - an introduction to WebVR**    
+Instructions with link to repo: [https://tailless.github.io/webvr/](https://tailless.github.io/webvr/)          
+For VR examples, you need an Android Phone with Google VR Services app installed ( requires Android OS version 6+ Marshmallow and gyroscope )
                         
 We also had a panel where four developers (Liv Franzen, Bridget McErlean, David Moody and Simon Capet) answered questions from the audience. 
 
