@@ -165,7 +165,7 @@ a:visited {
 .codehub-logo {
   width: 246px;
   height: 63px;
-  margin: 13px 0;
+  margin: 13px;
 }
 
 @media (min-width: 39em){
