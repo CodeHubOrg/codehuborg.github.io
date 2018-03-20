@@ -11,7 +11,7 @@ categories:
 
 I just become aware that we have come full circle with this, as the first evening workshop we ever did was on Git as well. There were also  two inbetween, making it the technology we've covered most! The workshops all differed a lot from each other, which goes to show what a multi-faceted topic it is. From basic commands, you can go to workflows, the internals of Git, lifecycles of files to a debate about the ability to "change history".
 
-This will be my last entry on this blog. We have not decided when will organise the next workshop, and I will anyway stop writing about them here - we might find a different way to document them. 
+This will be my last entry on this blog. We have not decided when we will organise the next workshop, and I will anyway stop writing about them here - we might find a different way to document them. 
 
 In any case, it has been an amazing four years so far, and I cannot express how grateful I am to everybody who gave up their time to make these workshops happen, most of all those who created and delivered them! 
 
